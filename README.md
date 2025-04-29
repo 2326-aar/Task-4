@@ -39,6 +39,7 @@ This project uses logistic regression for binary classification of breast cancer
    - Confusion Matrix
    - Precision, Recall, F1-Score (Classification Report)
    - ROC Curve and AUC Score
+   - Sigmoid function visualization
    
 ---
 
