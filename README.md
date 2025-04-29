@@ -1,60 +1,59 @@
 # Task-4
-# 🧠 Logistic Regression - Binary Classification Task
+# 🧠 Logistic Regression Classifier - Breast Cancer Detection
 
-## 📌 Task Overview
-This project is part of an AI & ML internship task focusing on binary classification using **Logistic Regression**. The objective is to train a classifier to distinguish between malignant and benign breast tumors using the **Breast Cancer Wisconsin Dataset**.
-
----
-
-## 🔧 Tools & Libraries Used
-- Python 🐍
-- `pandas` – data handling
-- `scikit-learn` – model building and evaluation
-- `matplotlib`, `seaborn` – visualization
+## 📌 Project Summary
+This project uses logistic regression for binary classification of breast cancer using the `data task 4.csv` dataset. The aim is to classify tumors as **malignant (1)** or **benign (0)** based on numerical features extracted from digitized images.
 
 ---
 
-## 📊 Dataset Information
-**Dataset**: [Breast Cancer Wisconsin Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html)  
-- **Features**: 30 numeric features (e.g., radius, texture, smoothness)  
-- **Target**:  
-  - `0` → Malignant (cancerous)  
-  - `1` → Benign (non-cancerous)
+## 📊 Dataset Overview
+- **File**: `data task 4.csv`
+- **Source**: Breast Cancer Wisconsin Dataset
+- **Target Column**: `diagnosis` (`M` = malignant, `B` = benign → mapped to 1 and 0)
+- **Features**: 30 numeric columns describing tumor characteristics
 
 ---
 
-## 🚀 Steps Performed
+## 🛠 Tools and Libraries
+- Python 3
+- `pandas`, `numpy` for data processing
+- `matplotlib`, `seaborn` for plotting
+- `scikit-learn` for machine learning and evaluation
 
-1. **Data Loading**  
-   Used `sklearn.datasets.load_breast_cancer()` to load the data.
+---
 
-2. **Preprocessing**  
-   - Train-test split (80/20)  
-   - Standardization using `StandardScaler`
+## 🚀 Workflow
 
-3. **Model Training**  
-   Trained a `LogisticRegression` model on the training data.
+1. **Data Cleaning**
+   - Dropped unnecessary columns (`id`, `Unnamed: 32`)
+   - Converted diagnosis to binary labels (M → 1, B → 0)
 
-4. **Evaluation Metrics**
-   - Confusion Matrix  
-   - Classification Report (Precision, Recall, F1-score)  
-   - ROC Curve and ROC-AUC Score  
+2. **Preprocessing**
+   - Train-test split (80% train, 20% test)
+   - Feature standardization with `StandardScaler`
+
+3. **Model Training**
+   - Applied `LogisticRegression` with increased iterations
+
+4. **Evaluation**
+   - Confusion Matrix
+   - Precision, Recall, F1-Score (Classification Report)
+   - ROC Curve and AUC Score
    
 ---
 
 ## ✅ Results
 
-- **Confusion Matrix**: 
-  - True Positives and Negatives clearly highlighted
-- **ROC-AUC Score**: ~0.99
-- **Model performed very well in separating malignant vs benign cases.**
+- **Model**: Logistic Regression
+- **Accuracy**: High (over 95% expected)
+- **ROC-AUC Score**: Typically > 0.98
+- **Clear separation between malignant and benign classes**
 
+---
 
 ## 📈 Visuals
 
-### Confusion Matrix  
-![Confusion Matrix](screenshots/confusion_matrix.png)
-
-### ROC Curve  
-![ROC Curve](screenshots/roc_curve.png)
+- 📊 Confusion Matrix  
+- 📈 ROC Curve  
+- ➿ Sigmoid Curve  
 
