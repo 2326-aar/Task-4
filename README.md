@@ -50,4 +50,11 @@ This project is part of an AI & ML internship task focusing on binary classifica
 - **Model performed very well in separating malignant vs benign cases.**
 
 
+## 📈 Visuals
+
+### Confusion Matrix  
+![Confusion Matrix](screenshots/confusion_matrix.png)
+
+### ROC Curve  
+![ROC Curve](screenshots/roc_curve.png)
 
